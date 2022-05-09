@@ -13,7 +13,43 @@
 	</head>
 	<body>
 		<div class="d-flex flex-column align-items-center mt-5">
-			<p>Hier können Einträge in der TODO Liste überarbeitet werden</p>
+			<h1>To-Do bearbeiten</h1>
+			<div class="card col-sm-6 p-3">
+				<div class="form-floating mb-3">
+					<input
+						type="text"
+						class="form-control"
+						id="titel"
+						placeholder="Titel des To-Dos"
+						value="Mein erstes To-Do" />
+					<label for="titel">Titel</label>
+				</div>
+				<div
+					class="col-12 d-flex flex-row justify-content-around align-items-center">
+					<div class="form-floating mb-3 col-4">
+						<input
+							type="date"
+							class="form-control"
+							id="date"
+							placeholder="Bis wann soll das To-Do bearbeitet werden?"
+							value="2022-05-12" />
+						<label for="date">Datum</label>
+					</div>
+					<div class="form-floating mb-3 col-4">
+						<input
+							type="number"
+							class="form-control"
+							id="percentage"
+							placeholder="Wie viel des To-Dos ist bereits geschafft?"
+							value="25" />
+						<label for="percentage">Prozent</label>
+					</div>
+					<div class="form-floating mb-3">
+						<button class="btn btn-primary">Speichern</button>
+					</div>
+				</div>
+			</div>
+			<a href="impressum.html">Impressum</a>
 		</div>
 	</body>
 </html>
